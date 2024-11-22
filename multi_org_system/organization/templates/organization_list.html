@@ -1,0 +1,7 @@
+<h1>Organizations</h1>
+<a href="{% url 'organization_create' %}">Create New Organization</a>
+<ul>
+    {% for organization in organizations %}
+    <li>{{ organization.name }}</li>
+    {% endfor %}
+</ul>
